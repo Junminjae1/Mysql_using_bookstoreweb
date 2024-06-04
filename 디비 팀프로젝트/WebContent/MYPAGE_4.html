@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookManager</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css"> 
+<script src="userdelete.js">
+</script>
+</head>
+<body>
+<nav class="NAV">
+    <ul>
+        <li class="bar"></li>
+        <li class="rightover"><a href="YES_HOME.html">Home</a></li>   
+        <li class="rightover"><a href="MYPAGE.html">마이페이지</a></li>
+        <li class="rightover"><a href="YES_HOME.html">로그아웃</a></li>
+    </ul>
+</nav>
+<aside class="ASIDE">
+    <image class = "imageover" src="image/BookManager.PNG"></image>
+    <!--검색 기능 구현해야됌 ->자바스크립트로 페이지내에서 검색할수 있는 기능.-->
+    <div class = "SERCH">
+        <div class="serch">
+            <input type="text" placeholder="통합검색">
+            <button><image style="width: 30px;" src="image/serchimage.PNG"></image></button>
+        </div>
+    </div>
+
+    <image class = "asideright" src="image/asideright.PNG"></image>
+
+</aside>
+<div class="HR"><p> </p></div>
+
+<main class="MAIN">
+    <div class="SECTION_CATEGORI">
+    <section class="SECTION">
+
+
+        <ul id="navi">
+            <li class="group">
+                <div class="title">마이페이지</div>
+                <ul class="sub">
+                    <li><a href="MYPAGE_1.html">결제 주문 내역</a></li>
+                    <li><a href="MYPAGE_2.html">취소 주문 내역</a></li>
+                    <li><a href="MYPAGE_3.html">장바구니</a></li>
+                    <li><a href="MYPAGE_4.html">쿠폰</a></li>
+                    <li><a href="MYPAGE_5.html">회원정보수정</a></li>
+                    <li><a href="YES_HOME.html" onclick="exe()">탈퇴</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="COUPON_KIND">
+            
+            <div class="COUPON_TABLE">
+                <b>사용 가능한 쿠폰 00개 </b><!-- db에서 가져올수 있게-->
+                <button id="COUPON_ASSIGN" name="button">쿠폰 등록</button>
+            
+            <table border="1">
+                <style>
+                    table {
+                        width: 800px;
+                        margin : 30px 0px 0px 250px;
+
+                    }
+                    </style>
+                <tr><b>
+                    <td><img src = "image/salecoupon.PNG">쿠폰명</td>      <!--onclick-->
+                    <td>사용 조건/ 사용기간</td>
+                    <td>할인 혜택</td>
+                </tr>
+                <tr>
+                    <td>쿠폰명</td>
+                    <td>2022.XX.XX~2022.XX.XX</td>
+                    <td>00%</td>
+                </tr>
+                <tr>
+                    <td>쿠폰명</td>
+                    <td>2022.XX.XX~2022.XX.XX</td>
+                    <td>00%</td>
+                </tr>
+                <tr>
+                    <td>쿠폰명</td>
+                    <td>2022.XX.XX~2022.XX.XX</td>
+                    <td>00%</td>
+                </tr>
+                <tr>
+                    <td>쿠폰명</td>
+                    <td>2022.XX.XX~2022.XX.XX</td>
+                    <td>00%</td>
+                </tr>
+            </DIV>
+            </table>
+            
+           
+
+               
+ 
+
+
+            
+
+        </div>
+        
+                
+            
+
+  
+
+  </section>
+  </div>
+</main>
+
+
+
+<footer class="FOOTER">
+    <image class = "imagefooter" src="image/foot.PNG"></image>
+</footer>
+</body>
+</html>

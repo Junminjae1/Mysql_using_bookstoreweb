@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookManager</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+<nav class="NAV">
+    <ul>
+        <li class="bar"></li>
+        <li class="rightover"><a href="YES_HOME.html">Home</a></li>
+        <li class="rightover"><a href="SIGNUP.html">회원가입</a></li>
+        <li class="rightover"><a href="LOGIN.html">로그인</a></li>
+    </ul>
+</nav>
+<aside class="ASIDE">
+    <image class = "imageover" src="image/BookManager.PNG"></image>
+    <!--검색 기능 구현해야됌 ->자바스크립트로 페이지내에서 검색할수 있는 기능.-->
+    <div class = "SERCH">
+        <div class="serch">
+            <input type="text" placeholder="통합검색">
+            <button><image style="width: 30px;" src="image/serchimage.PNG"></image></button>
+        </div>
+    </div>
+
+    <image class = "asideright" src="image/asideright.PNG"></image>
+
+</aside>
+<div class="HR"><p> </p></div>
+
+<main class="MAIN">
+    <div class="SECTION_CATEGORI">
+    <section class="SECTION">
+
+
+    <ul id="navi">
+        <li class="group">
+            <div class="title">가정 살림</div>
+            <ul class="sub">
+                <li><a href="#">임신/출산</a></li>
+                <li><a href="#">육아</a></li>
+                <li><a href="#">자녀교육</a></li>
+                <li><a href="#">요리</a></li>
+                <li><a href="#">집/살림</a></li>
+                <li><a href="#">결혼/가족</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="SECTION_ADMIN">
+            <form class="ADMIN_BOOK_ADD" method="get">
+              <h3>도서 등록</h3>
+              <hr><br>
+            책표지 : <input type="text" size="20" value="">
+            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            <br>
+            책이름 : <input type="text" size="20" value=""><br>
+            지은지 : <input type="text" size="20" value=""><br>
+            출판사 : <input type="text" size="20" value=""><br>
+            출판일 : <input type="text" size="20" value=""><br>
+            재고량 : <input type="text" size="20" value=""><br>
+            카테고리 번호 : <input type="text" size="15" value=""><br>
+            ISBN : <input type="text" size="15" value=""><br>
+            <button id="addbutton" type="submit"
+          onclick="alert('등록되었습니다.')">등록</button>
+            </form>
+          </div>
+        </div>
+
+  </div>
+
+  </section>
+  </div>
+</main>
+
+
+
+<footer class="FOOTER">
+    <image class = "imagefooter" src="image/foot.PNG"></image>
+</footer>
+</body>
+</html>

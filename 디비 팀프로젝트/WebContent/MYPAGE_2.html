@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookManager</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css"> 
+<script src="userdelete.js">
+</script>
+</head>
+<body>
+<nav class="NAV">
+    <ul>
+        <li class="bar"></li>
+        <li class="rightover"><a href="YES_HOME.html">Home</a></li>   
+        <li class="rightover"><a href="MYPAGE.html">마이페이지</a></li>
+        <li class="rightover"><a href="YES_HOME.html">로그아웃</a></li>
+    </ul>
+</nav>
+<aside class="ASIDE">
+    <image class = "imageover" src="image/BookManager.PNG"></image>
+    <!--검색 기능 구현해야됌 ->자바스크립트로 페이지내에서 검색할수 있는 기능.-->
+    <div class = "SERCH">
+        <div class="serch">
+            <input type="text" placeholder="통합검색">
+            <button><image style="width: 30px;" src="image/serchimage.PNG"></image></button>
+        </div>
+    </div>
+
+    <image class = "asideright" src="image/asideright.PNG"></image>
+
+</aside>
+<div class="HR"><p> </p></div>
+<main class="MAIN">
+    <div class="SECTION_CATEGORI">
+    <section class="SECTION">
+
+
+        <ul id="navi">
+            <li class="group">
+                <div class="title">마이페이지</div>
+                <ul class="sub">
+                    <li><a href="MYPAGE_1.html">결제 주문 내역</a></li>
+                    <li><a href="MYPAGE_2.html">취소 주문 내역</a></li>
+                    <li><a href="MYPAGE_3.html">장바구니</a></li>
+                    <li><a href="MYPAGE_4.html">쿠폰</a></li>
+                    <li><a href="MYPAGE_5.html">회원정보수정</a></li>
+                    <li><a href="YES_HOME.html" onclick="exe()">탈퇴</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <div class="SECTION_ORDERCANCEL">
+      <h3>주문 취소 목록</h3>
+      <hr><br>
+        <div class="BOOK_KINd_ORDERCANCEL">
+
+            <div id="pyozi">
+                도서사진
+            </div>
+            <div id="orderlist">
+                주문번호 : <a href="주문내역 이동주소" style="text-decoration: none;">00000</a>
+            </div>
+            <div id="tracking">
+              배송번호 : <a href="" style="text-decoration: none;">00000</a>
+            </div>
+            <div id="bookname">
+                도서명
+            </div>
+            <div id="orderpay">
+                주문 총 가격
+            </div>
+            <div id="bookcount">
+                수량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00개
+            </div>
+        </div>
+
+        <div class="BOOK_KINd_ORDERCANCEL">
+
+            <div id="pyozi">
+                도서사진
+            </div>
+            <div id="orderlist">
+                주문번호 : <a href="주문내역 이동주소" style="text-decoration: none;">00000</a>
+            </div>
+            <div id="tracking">
+              배송번호 : <a href="https://www.cjlogistics.com//ko/tool/parcel/tracking" style="text-decoration: none; color:red;">00000</a>
+            </div>
+            <div id="bookname">
+                도서명
+            </div>
+            <div id="orderpay">
+                주문 총 가격
+            </div>
+            <div id="bookcount">
+                수량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00개
+            </div>
+        </div>
+  </div>
+  </div>
+  </section>
+  </div>
+</main>
+
+
+
+<footer class="FOOTER">
+    <image class = "imagefooter" src="image/foot.PNG"></image>
+</footer>
+</body>
+</html>
